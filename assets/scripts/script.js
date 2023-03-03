@@ -51,6 +51,16 @@ let $carousel3 = $(".explore-jobs-2").flickity({
     fullscreen: true,
     pageDots: true, groupCells: true,
 });
+let $carousel4 = $(".dashboared").flickity({
+    autoPlay: true,
+    wrapAround: true,
+    prevNextButtons: false,
+    imagesLoaded: true,
+    setGallerySize: true, 
+    cellAlign: 'right',
+    fullscreen: true,
+    pageDots: true, groupCells: true,
+});
 
 
 // filters 
@@ -76,3 +86,8 @@ if ($(".open-filters")) {
     })
 }
 
+if ($(".closebtn")) {
+    $(".closebtn").click(function () {
+        $(this).parent().css("display", "none")
+    })
+}
