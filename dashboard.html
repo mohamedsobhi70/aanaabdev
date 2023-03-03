@@ -53,22 +53,18 @@
                         </div>
                     </div>
                     <div class="flex items-center  min-w-[16px]">
-                        <!-- schools  -->
-                        <a href="#" class="hidden lg:flex lg:items-center lg:gap-1 ltr:mr-[19px] rtl:ml-[19px]">
-                            <img src="assets/images/Visitor/school.svg" alt="school icon">
-                            <span class="text-text-sm text-[#6B7280]">المدراس</span>
+                        <a href="#" class=" flex items-center gap-6">
+                            <span class="flex items-center gap-2 ">
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="lg:fill-[#6B7280] fill-[#8447FF]"
+                                        d="M10 9.5C10 9.78125 9.75 10 9.5 10H6.5C6.21875 10 6 9.78125 6 9.5V8H0V12.5C0 13.3125 0.6875 14 1.5 14H14.5C15.2812 14 16 13.3125 16 12.5V8H10V9.5ZM14.5 3H12V1.5C12 0.71875 11.2812 0 10.5 0H5.5C4.6875 0 4 0.71875 4 1.5V3H1.5C0.6875 3 0 3.71875 0 4.5V7H16V4.5C16 3.71875 15.2812 3 14.5 3ZM10 3H6V2H10V3Z" />
+                                </svg>
+                                <span class="inline-block text-text-sm text-primary  lg:text-[#6B7280]">نشاطى</span>
+                            </span>
+                            <div class="hidden lg:block w-8 h-8 bg-cover"
+                                style="background-image: url(assets/images/Visitor/accountimg.png);"></div>
                         </a>
-                        <div class=" flex items-center gap-3">
-                            <a href="#"
-                                class="hidden lg:inline-block py-2 px-4 text-text-sm rounded-[40px] text-primary font-bold bg-[#F8F4FF]">انضم
-                                الى اعناب
-                            </a>
-                            <a href="#" class="flex items-center gap-1 ">
-                                <img class="block" src="assets/images/Visitor/user-icon.svg" width="16px" height="17px"
-                                    alt="user icon">
-                                <span class="hidden lg:inline-block text-text-sm text-[#6B7280]">دخول</span>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -79,7 +75,7 @@
     <!-- start Aanab main page content   -->
     <main class="bg-[#F7FAFA]">
         <section class="lg:py-24">
-            <div class="container">
+            <div class="container flex flex-col gap-8">
                 <div class="flex gap-[30px]">
                     <aside class="lg:basis-3/12 hidden lg:flex lg:flex-col lg:gap-[30px]">
                         <div class=" bg-white border border-[#DADBDD]  rounded-2xl">
@@ -162,6 +158,7 @@
                         </div>
                     </aside>
                     <section class="w-full lg:w-auto lg:basis-9/12 flex flex-col lg:gap-[30px]">
+                        <!-- hello section  -->
                         <section
                             class="flex justify-between items-center lg:rounded-2xl lg:border lg:border-[#DADBDD] lg:bg-white px-[30px] sm:px-[38px] lg:px-8 py-6 sm:py-8 lg:py-0">
                             <div class="flex flex-col gap-2">
@@ -173,6 +170,7 @@
                                 <img src="assets/images/Visitor/dashhero.png" alt="dashhero">
                             </div>
                         </section>
+                        <!-- Search jobs ----- Hidden on Descktop -- show on mobile & Tablet -->
                         <section class="search py-4 px-[30px] sm:px-[38px] lg:hidden">
                             <div class="flex flex-col gap-3 items-end relative">
                                 <div
@@ -199,6 +197,7 @@
                                 </button>
                             </div>
                         </section>
+                        <!-- notification section  -->
                         <div
                             class="bg-[#F8F4FF] p-6 rounded-lg lg:flex items-center justify-between border border-[#8447FF] hidden ">
                             <div class="flex items-center gap-4">
@@ -220,16 +219,21 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="dashboared">
+                        <!-- dashboard section start  -->
+                        <section class="dashboared px-[30px] sm:px-[38px] lg:px-0">
                             <!-- dashboared item  -->
                             <a href="#"
                                 class="carousel-cell  w-[70%] md:w-[30.5%] mx-[15px] border rounded-xl border-[#D1D5DB] overflow-hidden">
                                 <div class="flex flex-col ">
-                                <div class="py-5 px-4 flex justify-between items-center border-b border-[#DADBDD]">
-                                        <h3 class="text-14-15 lg:text-16-21 font-bold text-[#010513B2]">الطلبات النشطة</h3>
+                                    <div class="py-5 px-4 flex justify-between items-center border-b border-[#DADBDD]">
+                                        <h3 class="text-14-15 lg:text-16-21 font-bold text-[#010513B2]">الطلبات النشطة
+                                        </h3>
                                         <span class="text-xs text-[#0105138C]">اخر اسبوع ▾</span>
                                     </div>
-                                    <div class="text-center py-6 bg-white text-5xl leading-9 text-[#0105138C] font-bold">32</div>
+                                    <div
+                                        class="text-center py-6 bg-white text-5xl leading-9 text-[#0105138C] font-bold">
+                                        32
+                                    </div>
                                 </div>
                             </a>
 
@@ -237,11 +241,14 @@
                             <a href="#"
                                 class="carousel-cell  w-[70%] md:w-[30.5%] mx-[15px] border rounded-xl border-[#D1D5DB] overflow-hidden">
                                 <div class="flex flex-col ">
-                                <div class="py-5 px-4 flex justify-between items-center border-b border-[#DADBDD]">
-                                        <h3 class="text-14-15 lg:text-16-21 font-bold text-[#010513B2]">الطلبات المعلقة</h3>
+                                    <div class="py-5 px-4 flex justify-between items-center border-b border-[#DADBDD]">
+                                        <h3 class="text-14-15 lg:text-16-21 font-bold text-[#010513B2]">الطلبات المعلقة
+                                        </h3>
                                         <span class="text-xs text-[#0105138C]">اخر اسبوع ▾</span>
                                     </div>
-                                    <div class="text-center py-6 bg-white text-5xl leading-9 text-[#0105138C] font-bold">32</div>
+                                    <div
+                                        class="text-center py-6 bg-white text-5xl leading-9 text-[#0105138C] font-bold">
+                                        32</div>
                                 </div>
                             </a>
 
@@ -249,11 +256,14 @@
                             <a href="#"
                                 class="carousel-cell  w-[70%] md:w-[30.5%] mx-[15px] border rounded-xl border-[#D1D5DB] overflow-hidden">
                                 <div class="flex flex-col ">
-                                <div class="py-5 px-4 flex justify-between items-center border-b border-[#DADBDD]">
-                                        <h3 class="text-14-15 lg:text-16-21 font-bold text-[#010513B2]">الطلبات المقبولة</h3>
+                                    <div class="py-5 px-4 flex justify-between items-center border-b border-[#DADBDD]">
+                                        <h3 class="text-14-15 lg:text-16-21 font-bold text-[#010513B2]">الطلبات المقبولة
+                                        </h3>
                                         <span class="text-xs text-[#0105138C]">اخر اسبوع ▾</span>
                                     </div>
-                                    <div class="text-center py-6 bg-white text-5xl leading-9 text-[#0105138C] font-bold">32</div>
+                                    <div
+                                        class="text-center py-6 bg-white text-5xl leading-9 text-[#0105138C] font-bold">
+                                        32</div>
                                 </div>
                             </a>
 
@@ -261,18 +271,1222 @@
                             <a href="#"
                                 class="carousel-cell  w-[70%] md:w-[30.5%] mx-[15px] border rounded-xl border-[#D1D5DB] overflow-hidden">
                                 <div class="flex flex-col ">
-                                <div class="py-5 px-4 flex justify-between items-center border-b border-[#DADBDD]">
-                                        <h3 class="text-14-15 lg:text-16-21 font-bold text-[#010513B2]">الطلبات النشطة</h3>
+                                    <div class="py-5 px-4 flex justify-between items-center border-b border-[#DADBDD]">
+                                        <h3 class="text-14-15 lg:text-16-21 font-bold text-[#010513B2]">الطلبات النشطة
+                                        </h3>
                                         <span class="text-xs text-[#0105138C]">اخر اسبوع ▾</span>
                                     </div>
-                                    <div class="text-center py-6 bg-white text-5xl leading-9 text-[#0105138C] font-bold">32</div>
+                                    <div
+                                        class="text-center py-6 bg-white text-5xl leading-9 text-[#0105138C] font-bold">
+                                        32</div>
                                 </div>
                             </a>
 
 
+                        </section>
+
+                        <div
+                            class="flex my-12 mx-[30px] sm:mx-[38px] lg:hidden bg-white border border-[#8447FF] flex-col  rounded-2xl overflow-hidden">
+                            <div class=" p-8">
+                                <h2 class="text-center text-[#333745] text-20-30 font-bold mb-2">اكتمال الملف</h2>
+                                <div class="text-[#0105138C] text-14-25 text-center mb-3">باقي <strong
+                                        class="text-[#010513E5]">6 خطوات </strong> علي انتهاء ملفك</div>
+                                <div class="h-1.5 bg-[#EFEFF0] rounded-[40px] relative overflow-hidden mb-6">
+                                    <div
+                                        class="absolute rtl:right-0 ltr:left-0 top-0 h-1.5 bg-primary w-3/4  rounded-[40px]">
+                                    </div>
+                                </div>
+                                <button
+                                    class="text-white text-14-25 font-bold w-full bg-primary rounded-[48px] py-3 px-8 ">أكمل
+                                    ملفك
+                                    الشخصي</button>
+                            </div>
+                            <div
+                                class="py-4 px-8 flex items-center justify-between border border-[#DADBDD] rounded-2xl">
+                                <span class="text-14-25 text-[#0105138C] font-bold">تابع تقدمك 7/4</span>
+                                <svg width="14" height="7" viewBox="0 0 14 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.2797 0.966675L7.93306 5.31334C7.41973 5.82668 6.57973 5.82668 6.06639 5.31334L1.71973 0.966675"
+                                        stroke="#010513" stroke-opacity="0.55" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+
+                            </div>
                         </div>
+
+                        <!-- applied Jobs -->
+                        <section>
+                            <div class="container">
+                                <div class=" flex flex-col lg:gap-6 sm:px-[38px] lg:px-0">
+                                    <div
+                                        class="flex justify-between items-center px-[30px] py-6 sm:px-[38px] lg:px-0 lg:py-0 bg-white sm:bg-transparent">
+                                        <h2 class="text-18-27 sm:text-24-36 lg:text-18-27 text-[#333745]">٢٤ طلب</h2>
+                                        <div
+                                            class="hidden lg:flex lg:gap-4 lg:items-center rounded-[64px] border border-[#D9DADC] px-4 py-2 bg-white">
+                                            <svg width="11" height="15" viewBox="0 0 11 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.19141 8.375C0.417969 8.375 0.03125 9.28906 0.59375 9.81641L4.77734 14C5.09375 14.3516 5.62109 14.3516 5.97266 14L10.1562 9.81641C10.6836 9.28906 10.2969 8.375 9.55859 8.375H1.19141ZM10.1562 4.68359L5.97266 0.5C5.62109 0.183594 5.09375 0.183594 4.77734 0.5L0.59375 4.68359C0.03125 5.24609 0.417969 6.125 1.19141 6.125H9.55859C10.2969 6.125 10.6836 5.24609 10.1562 4.68359Z"
+                                                    fill="#6B7280" />
+                                            </svg>
+                                            <span class="text-16-24 text-[#6B7280]">رتب ب <strong
+                                                    class="">الأحدث</strong>
+                                                ▾</span>
+
+                                        </div>
+                                        <button class="lg:hidden open-filters">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M16.7602 8.02372H9.31193C8.62668 8.02372 8.07055 8.57985 8.07055 9.2651C8.07055 9.95034 8.62668 10.5065 9.31193 10.5065H16.7602C17.4454 10.5065 18.0016 9.95034 18.0016 9.2651C18.0016 8.57985 17.4454 8.02372 16.7602 8.02372ZM16.7602 4.29958H9.31193C8.62668 4.29958 8.07055 4.85572 8.07055 5.54096C8.07055 6.2262 8.62668 6.78234 9.31193 6.78234H16.7602C17.4454 6.78234 18.0016 6.2262 18.0016 5.54096C18.0016 4.85572 17.4454 4.29958 16.7602 4.29958ZM16.7602 11.7479H13.0361C12.3508 11.7479 11.7947 12.304 11.7947 12.9892C11.7947 13.6745 12.3508 14.2306 13.0361 14.2306H16.7602C17.4454 14.2306 18.0016 13.6745 18.0016 12.9892C18.0016 12.304 17.4454 11.7479 16.7602 11.7479ZM9.73835 11.9359C9.49504 11.6914 9.31193 11.7479 9.31193 11.7479H5.58779V0.575439H4.34641V11.7479H0.622271C0.622271 11.7479 0.419934 11.6914 0.176623 11.9359C-0.066687 12.1805 -0.066687 12.5765 0.176623 12.821L4.48544 17.7791C4.61579 17.9094 4.78772 17.9653 4.95717 17.956C5.12724 17.9653 5.29916 17.9094 5.42951 17.7791L9.73835 12.821C9.98166 12.5765 9.98166 12.1805 9.73835 11.9359ZM16.7602 15.472H9.31193C8.62668 15.472 8.07055 16.0281 8.07055 16.7134C8.07055 17.3986 8.62668 17.9548 9.31193 17.9548H16.7602C17.4454 17.9548 18.0016 17.3986 18.0016 16.7134C18.0016 16.0281 17.4454 15.472 16.7602 15.472ZM9.31193 3.0582H16.7602C17.4454 3.0582 18.0016 2.50206 18.0016 1.81682C18.0016 1.13158 17.4454 0.575439 16.7602 0.575439H9.31193C8.62668 0.575439 8.07055 1.13158 8.07055 1.81682C8.07055 2.50206 8.62668 3.0582 9.31193 3.0582Z"
+                                                    fill="#6B7280"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <section
+                                        class="grid sm:border sm:border-[#D9DADC] rounded-none sm:rounded-2xl overflow-hidden ">
+                                        <!-- card item  -->
+                                        <article
+                                            class="border-b border-b-[#D9DADC] relative  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
+                                            <div class="flex gap-4 items-start">
+                                                <div
+                                                    class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
+                                                    <img src="assets/images/Visitor/featuredjob-2.png"
+                                                        alt="featured job">
+                                                </div>
+                                                <div class=" flex gap-4 items-center">
+                                                    <div
+                                                        class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
+                                                        <img src="assets/images/Visitor/featuredjob-2.png"
+                                                            alt="featured job">
+                                                    </div>
+                                                    <div class="flex flex-col gap-4 flex-1">
+                                                        <div class="flex gap-4">
+                                                            <div class=" flex justify-between gap-5 items-center">
+                                                                <h2 class="font-bold text-16-21 text-[#333745 ]">
+                                                                    مدرس انشطة تفاعلية للمرحلة
+                                                                    الابتدائية
+                                                                </h2>
+
+                                                            </div>
+                                                            <span
+                                                                class="text-11-16 font-bold bottom-[22px] rtl:left-[30px] ltr:right-[30px]  text-[#DC2626] py-0.5 px-1.5 bg-[#FDF2F2] rounded-[5px] absolute sm:static">
+                                                                لم يتم اختيارك
+                                                            </span>
+                                                        </div>
+                                                        <div class="flex flex-col gap-4">
+                                                            <div class="flex flex-col gap-3 flex-1">
+                                                                <p class="text-[#010513E5] text-13-23 ">
+                                                                    نعتنى بأدق التفاصيل وقت التسجيل مع
+                                                                    المدربين لتكون الدورات المصورة ذات جودة عالية تشجعك
+                                                                    على
+                                                                    المشاهدة
+                                                                </p>
+                                                            </div>
+                                                            <span
+                                                                class="text-[#6B7280] text-xs flex items-center gap-2">
+                                                                <svg width="12" height="13" viewBox="0 0 12 13"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6 0.6875C2.78906 0.6875 0.1875 3.28906 0.1875 6.5C0.1875 9.71094 2.78906 12.3125 6 12.3125C9.21094 12.3125 11.8125 9.71094 11.8125 6.5C11.8125 3.28906 9.21094 0.6875 6 0.6875ZM8.15625 8.02344L7.6875 8.60938C7.61719 8.70312 7.52344 8.77344 7.38281 8.77344C7.3125 8.77344 7.21875 8.72656 7.17188 8.67969L5.60156 7.50781C5.36719 7.34375 5.25 7.08594 5.25 6.78125V3.125C5.25 2.9375 5.41406 2.75 5.625 2.75H6.375C6.5625 2.75 6.75 2.9375 6.75 3.125V6.5L8.10938 7.50781C8.17969 7.57812 8.25 7.67188 8.25 7.78906C8.25 7.88281 8.20312 7.97656 8.15625 8.02344Z"
+                                                                        fill="#010513" fill-opacity="0.55" />
+                                                                </svg>
+                                                                منذ شهرين
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+
+                                        <!-- card item  -->
+                                        <article
+                                            class="border-b border-b-[#D9DADC] relative  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
+                                            <div class="flex gap-4 items-start">
+                                                <div
+                                                    class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
+                                                    <img src="assets/images/Visitor/featuredjob-2.png"
+                                                        alt="featured job">
+                                                </div>
+                                                <div class=" flex gap-4 items-center">
+                                                    <div
+                                                        class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
+                                                        <img src="assets/images/Visitor/featuredjob-2.png"
+                                                            alt="featured job">
+                                                    </div>
+                                                    <div class="flex flex-col gap-4 flex-1">
+                                                        <div class="flex gap-4">
+                                                            <div class=" flex justify-between gap-5 items-center">
+                                                                <h2 class="font-bold text-16-21 text-[#333745 ]">
+                                                                    مدرس انشطة تفاعلية للمرحلة
+                                                                    الابتدائية
+                                                                </h2>
+
+                                                            </div>
+                                                            <span
+                                                                class="text-11-16 font-bold bottom-[22px] rtl:left-[30px] ltr:right-[30px]  text-[#CD9D2A] py-0.5 px-1.5 bg-[#FFF8E7] rounded-[5px] absolute sm:static">
+                                                                معلق
+                                                            </span>
+                                                        </div>
+                                                        <div class="flex flex-col gap-4">
+                                                            <div class="flex flex-col gap-3 flex-1">
+                                                                <p class="text-[#010513E5] text-13-23 ">
+                                                                    نعتنى بأدق التفاصيل وقت التسجيل مع
+                                                                    المدربين لتكون الدورات المصورة ذات جودة عالية تشجعك
+                                                                    على
+                                                                    المشاهدة
+                                                                </p>
+                                                            </div>
+                                                            <span
+                                                                class="text-[#6B7280] text-xs flex items-center gap-2">
+                                                                <svg width="12" height="13" viewBox="0 0 12 13"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6 0.6875C2.78906 0.6875 0.1875 3.28906 0.1875 6.5C0.1875 9.71094 2.78906 12.3125 6 12.3125C9.21094 12.3125 11.8125 9.71094 11.8125 6.5C11.8125 3.28906 9.21094 0.6875 6 0.6875ZM8.15625 8.02344L7.6875 8.60938C7.61719 8.70312 7.52344 8.77344 7.38281 8.77344C7.3125 8.77344 7.21875 8.72656 7.17188 8.67969L5.60156 7.50781C5.36719 7.34375 5.25 7.08594 5.25 6.78125V3.125C5.25 2.9375 5.41406 2.75 5.625 2.75H6.375C6.5625 2.75 6.75 2.9375 6.75 3.125V6.5L8.10938 7.50781C8.17969 7.57812 8.25 7.67188 8.25 7.78906C8.25 7.88281 8.20312 7.97656 8.15625 8.02344Z"
+                                                                        fill="#010513" fill-opacity="0.55" />
+                                                                </svg>
+                                                                منذ شهرين
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+
+                                        <!-- card item  -->
+                                        <article
+                                            class="border-b border-b-[#D9DADC] relative  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
+                                            <div class="flex gap-4 items-start">
+                                                <div
+                                                    class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
+                                                    <img src="assets/images/Visitor/featuredjob-2.png"
+                                                        alt="featured job">
+                                                </div>
+                                                <div class=" flex gap-4 items-center flex-1">
+                                                    <div
+                                                        class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
+                                                        <img src="assets/images/Visitor/featuredjob-2.png"
+                                                            alt="featured job">
+                                                    </div>
+                                                    <div class="flex flex-col gap-4 flex-1">
+                                                        <div class="flex gap-4">
+                                                            <div class=" flex justify-between gap-5 items-center">
+                                                                <h2 class="font-bold text-16-21 text-[#333745 ]">
+                                                                    مدرس انشطة تفاعلية للمرحلة
+                                                                    الابتدائية
+                                                                </h2>
+
+                                                            </div>
+                                                            <span
+                                                                class="text-11-16 font-bold bottom-[22px] rtl:left-[30px] ltr:right-[30px] text-[#10B981] py-0.5 px-1.5 bg-[#DBF5EC]  rounded-[5px] absolute sm:static">
+                                                                مقبول
+                                                            </span>
+                                                        </div>
+                                                        <div class="flex flex-col gap-4">
+                                                            <div class="flex flex-col gap-3 flex-1">
+                                                                <p class="text-[#010513E5] text-13-23 ">
+                                                                    نعتنى بأدق التفاصيل وقت التسجيل مع
+                                                                    المدربين لتكون الدورات المصورة ذات جودة عالية تشجعك
+                                                                    على
+                                                                    المشاهدة
+                                                                </p>
+                                                            </div>
+                                                            <span
+                                                                class="text-[#6B7280] text-xs flex items-center gap-2">
+                                                                <svg width="12" height="13" viewBox="0 0 12 13"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6 0.6875C2.78906 0.6875 0.1875 3.28906 0.1875 6.5C0.1875 9.71094 2.78906 12.3125 6 12.3125C9.21094 12.3125 11.8125 9.71094 11.8125 6.5C11.8125 3.28906 9.21094 0.6875 6 0.6875ZM8.15625 8.02344L7.6875 8.60938C7.61719 8.70312 7.52344 8.77344 7.38281 8.77344C7.3125 8.77344 7.21875 8.72656 7.17188 8.67969L5.60156 7.50781C5.36719 7.34375 5.25 7.08594 5.25 6.78125V3.125C5.25 2.9375 5.41406 2.75 5.625 2.75H6.375C6.5625 2.75 6.75 2.9375 6.75 3.125V6.5L8.10938 7.50781C8.17969 7.57812 8.25 7.67188 8.25 7.78906C8.25 7.88281 8.20312 7.97656 8.15625 8.02344Z"
+                                                                        fill="#010513" fill-opacity="0.55" />
+                                                                </svg>
+                                                                منذ شهرين
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+
+                                        <!-- card item  -->
+                                        <article
+                                            class="border-b border-b-[#D9DADC] relative  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
+                                            <div class="flex gap-4 items-start">
+                                                <div
+                                                    class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
+                                                    <img src="assets/images/Visitor/featuredjob-2.png"
+                                                        alt="featured job">
+                                                </div>
+                                                <div class=" flex gap-4 items-center">
+                                                    <div
+                                                        class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
+                                                        <img src="assets/images/Visitor/featuredjob-2.png"
+                                                            alt="featured job">
+                                                    </div>
+                                                    <div class="flex flex-col gap-4 flex-1">
+                                                        <div class="flex gap-4">
+                                                            <div class=" flex justify-between gap-5 items-center">
+                                                                <h2 class="font-bold text-16-21 text-[#333745 ]">
+                                                                    مدرس انشطة تفاعلية للمرحلة
+                                                                    الابتدائية
+                                                                </h2>
+
+                                                            </div>
+                                                            <span
+                                                                class="text-11-16 font-bold bottom-[22px] rtl:left-[30px] ltr:right-[30px] text-[#8447FF] py-0.5 px-1.5 bg-[#F8F4FF]  rounded-[5px] absolute sm:static">
+                                                                مغلق
+                                                            </span>
+                                                        </div>
+                                                        <div class="flex flex-col gap-4">
+                                                            <div class="flex flex-col gap-3 flex-1">
+                                                                <p class="text-[#010513E5] text-13-23 ">
+                                                                    نعتنى بأدق التفاصيل وقت التسجيل مع
+                                                                    المدربين لتكون الدورات المصورة ذات جودة عالية تشجعك
+                                                                    على
+                                                                    المشاهدة
+                                                                </p>
+                                                            </div>
+                                                            <span
+                                                                class="text-[#6B7280] text-xs flex items-center gap-2">
+                                                                <svg width="12" height="13" viewBox="0 0 12 13"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6 0.6875C2.78906 0.6875 0.1875 3.28906 0.1875 6.5C0.1875 9.71094 2.78906 12.3125 6 12.3125C9.21094 12.3125 11.8125 9.71094 11.8125 6.5C11.8125 3.28906 9.21094 0.6875 6 0.6875ZM8.15625 8.02344L7.6875 8.60938C7.61719 8.70312 7.52344 8.77344 7.38281 8.77344C7.3125 8.77344 7.21875 8.72656 7.17188 8.67969L5.60156 7.50781C5.36719 7.34375 5.25 7.08594 5.25 6.78125V3.125C5.25 2.9375 5.41406 2.75 5.625 2.75H6.375C6.5625 2.75 6.75 2.9375 6.75 3.125V6.5L8.10938 7.50781C8.17969 7.57812 8.25 7.67188 8.25 7.78906C8.25 7.88281 8.20312 7.97656 8.15625 8.02344Z"
+                                                                        fill="#010513" fill-opacity="0.55" />
+                                                                </svg>
+                                                                منذ شهرين
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+
+
+                                    </section>
+                                    <div class="flex justify-center items-center gap-2 my-4 lg:my-0">
+                                        <a href="#"
+                                            class="w-10 h-10 rounded-full bg-primary text-2xl  text-white flex justify-center items-center">|</a>
+                                        <a href="#"
+                                            class="w-8 h-8 border border-[#D9DADC] text-[#6B7280] text-18-21 bg-white rounded-full flex justify-center items-center">2</a>
+                                        <a href="#"
+                                            class="w-8 h-8 border border-[#D9DADC] text-[#6B7280] text-18-21 bg-white rounded-full flex justify-center items-center">3</a>
+                                        <a href="#"
+                                            class="w-8 h-8 border border-[#D9DADC] text-[#6B7280] text-18-21 bg-white rounded-full flex justify-center items-center">4</a>
+                                        <a href="#"
+                                            class="w-8 h-8 border border-[#D9DADC] text-[#6B7280] text-18-21 bg-white rounded-full flex justify-center items-center">5</a>
+                                        <a href="#"
+                                            class="w-8 h-8  text-[#6B7280] text-18-21   flex justify-center items-center">...</a>
+                                        <a href="#"
+                                            class="w-8 h-8 border border-[#D9DADC] text-[#6B7280] text-18-21 bg-white rounded-full flex justify-center items-center">22</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="lg:hidden px-[30px] sm:px-[38px] my-8">
+                            <div class="container">
+                                <div class="rounded-2xl border border-[#DADBDD] bg-white">
+                                    <div class=" border-b border-b-[#DADBDD] p-6 flex justify-between items-center">
+                                        <div class=" flex flex-col gap-1.5">
+                                            <h3 class="text-[#010513B2] text-14-17">
+                                                حافظ على تحديث مهاراتك!
+                                            </h3>
+                                            <a href="#" class="text-primary text-xs">أضف مهارات جديدة</a>
+                                        </div>
+                                        <a href="#" class="hidden sm:block">
+                                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.453125 7.20312C0.03125 7.67188 0.03125 8.375 0.453125 8.79688L6.82812 15.1719C7.29688 15.6406 8 15.6406 8.42188 15.1719L9.5 14.1406C9.92188 13.6719 9.92188 12.9688 9.5 12.5469L4.95312 8L9.5 3.5C9.92188 3.07812 9.92188 2.32812 9.5 1.90625L8.42188 0.828125C8 0.40625 7.29688 0.40625 6.82812 0.828125L0.453125 7.20312Z"
+                                                    fill="#8447FF" />
+                                            </svg>
+                                        </a>
+
+                                    </div>
+                                    <div class="p-6 flex justify-between items-center">
+                                        <div class=" flex flex-col gap-4">
+                                            <h3 class="text-[#010513B2] text-14-17 flex items-center gap-1.5">
+                                                <span> الفئات الخاصة بي </span>
+                                                <a href="#" class="">
+
+                                                </a>
+                                            </h3>
+                                            <div class="flex gap-1.5 items-center">
+                                                <a href="#"
+                                                    class="py-1 px-3.5 bg-[#F8F4FF] text-primary text-xs rounded-[65px]">
+                                                    الرياضيات
+                                                </a>
+                                                <a href="#"
+                                                    class="py-1 px-3.5 bg-[#F8F4FF] text-primary text-xs rounded-[65px]">
+                                                    التاريخ
+                                                </a>
+                                                <a href="#"
+                                                    class="py-1 px-3.5 bg-[#F8F4FF] text-primary text-xs rounded-[65px]">
+                                                    الجرافيا
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <a href="#" class="hidden sm:block">
+                                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.453125 7.20312C0.03125 7.67188 0.03125 8.375 0.453125 8.79688L6.82812 15.1719C7.29688 15.6406 8 15.6406 8.42188 15.1719L9.5 14.1406C9.92188 13.6719 9.92188 12.9688 9.5 12.5469L4.95312 8L9.5 3.5C9.92188 3.07812 9.92188 2.32812 9.5 1.90625L8.42188 0.828125C8 0.40625 7.29688 0.40625 6.82812 0.828125L0.453125 7.20312Z"
+                                                    fill="#8447FF" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </section>
                 </div>
+                <section >
+                    <div class="container">
+                        <div class=" flex gap-[30px] mb-10">
+                            <!-- aside filters  -->
+                            <aside
+                                class="  lg:basis-3/12 fixed lg:static w-full lg:w-auto left-0  h-full pt-20 lg:pt-0 overflow-y-scroll translate-y-full lg:translate-y-0 lg:overflow-visible backdrop-blur-[4px] transition duration-500"
+                                style="top: 100%;">
+
+                            </aside>
+
+                            <!-- jobs  -->
+                            <section class="lg:basis-9/12 w-full lg:w-auto sm:px-[38px] lg:px-0">
+                                <div class=" flex flex-col lg:gap-6">
+                                    <div
+                                        class="flex justify-between items-center px-[30px] py-6 sm:px-[38px] lg:px-0 lg:py-0">
+                                        <h2 class="text-18-27 sm:text-24-36 text-[#333745]">الوظائف المقترحة</h2>
+                                        <a href="#" class="hidden sm:flex gap-6 items-center text-16-24 text-primary">
+                                            المزيد من الوظائف ←
+                                        </a>
+                                        <button class="sm:hidden open-filters">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M16.7602 8.02372H9.31193C8.62668 8.02372 8.07055 8.57985 8.07055 9.2651C8.07055 9.95034 8.62668 10.5065 9.31193 10.5065H16.7602C17.4454 10.5065 18.0016 9.95034 18.0016 9.2651C18.0016 8.57985 17.4454 8.02372 16.7602 8.02372ZM16.7602 4.29958H9.31193C8.62668 4.29958 8.07055 4.85572 8.07055 5.54096C8.07055 6.2262 8.62668 6.78234 9.31193 6.78234H16.7602C17.4454 6.78234 18.0016 6.2262 18.0016 5.54096C18.0016 4.85572 17.4454 4.29958 16.7602 4.29958ZM16.7602 11.7479H13.0361C12.3508 11.7479 11.7947 12.304 11.7947 12.9892C11.7947 13.6745 12.3508 14.2306 13.0361 14.2306H16.7602C17.4454 14.2306 18.0016 13.6745 18.0016 12.9892C18.0016 12.304 17.4454 11.7479 16.7602 11.7479ZM9.73835 11.9359C9.49504 11.6914 9.31193 11.7479 9.31193 11.7479H5.58779V0.575439H4.34641V11.7479H0.622271C0.622271 11.7479 0.419934 11.6914 0.176623 11.9359C-0.066687 12.1805 -0.066687 12.5765 0.176623 12.821L4.48544 17.7791C4.61579 17.9094 4.78772 17.9653 4.95717 17.956C5.12724 17.9653 5.29916 17.9094 5.42951 17.7791L9.73835 12.821C9.98166 12.5765 9.98166 12.1805 9.73835 11.9359ZM16.7602 15.472H9.31193C8.62668 15.472 8.07055 16.0281 8.07055 16.7134C8.07055 17.3986 8.62668 17.9548 9.31193 17.9548H16.7602C17.4454 17.9548 18.0016 17.3986 18.0016 16.7134C18.0016 16.0281 17.4454 15.472 16.7602 15.472ZM9.31193 3.0582H16.7602C17.4454 3.0582 18.0016 2.50206 18.0016 1.81682C18.0016 1.13158 17.4454 0.575439 16.7602 0.575439H9.31193C8.62668 0.575439 8.07055 1.13158 8.07055 1.81682C8.07055 2.50206 8.62668 3.0582 9.31193 3.0582Z"
+                                                    fill="#6B7280"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <section
+                                        class="grid sm:border sm:border-[#D9DADC] rounded-none sm:rounded-2xl overflow-hidden ">
+                                        <!-- card item  -->
+                                        <article
+                                            class="border-b border-b-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
+                                            <div class="flex items-start gap-4">
+                                                <div
+                                                    class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
+                                                    <img src="assets/images/Visitor/featuredjob-2.png"
+                                                        alt="featured job">
+                                                </div>
+                                                <div class="flex justify-center flex-col gap-5 flex-1">
+                                                    <div class=" flex gap-4 items-center">
+                                                        <div
+                                                            class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
+                                                            <img src="assets/images/Visitor/featuredjob-2.png"
+                                                                alt="featured job">
+                                                        </div>
+                                                        <div class="flex flex-col lg:flex-row gap-1 flex-1">
+                                                            <div class=" flex justify-between gap-5 items-center">
+                                                                <h2 class="font-bold text-16-21 text-[#333745 ]">
+                                                                    مدرس انشطة تفاعلية للمرحلة
+                                                                    الابتدائية
+                                                                </h2>
+                                                                <svg class="lg:hidden" width="24" height="24"
+                                                                    viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M9.25 9.05005C11.03 9.70005 12.97 9.70005 14.75 9.05005"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path
+                                                                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <span
+                                                                class="text-11-16 font-bold w-[61px] text-[#6B7280] py-0.5 px-1.5 bg-[#F0F6F6]  rounded-[5px]">
+                                                                دوام كامل
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col gap-3 flex-1">
+                                                            <div
+                                                                class="flex gap-1 items-center text-xs text-[#010513B2]">
+                                                                <span>من ذوي الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>5 سنوات من الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>تم النشر منذ 53 دقيقة</span>
+                                                            </div>
+                                                            <p class="text-[#010513E5] text-13-23 ">
+                                                                نعتنى بأدق التفاصيل وقت التسجيل مع
+                                                                المدربين لتكون الدورات المصورة ذات جودة عالية تشجعك على
+                                                                المشاهدة
+                                                            </p>
+
+                                                        </div>
+                                                        <div class="flex justify-between items-center">
+                                                            <span
+                                                                class="text-[#6B7280] text-xs flex items-center gap-2">
+                                                                <svg width="16" height="17" viewBox="0 0 16 17"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M7.99992 9.71835C9.14867 9.71835 10.0799 8.7871 10.0799 7.63835C10.0799 6.4896 9.14867 5.55835 7.99992 5.55835C6.85117 5.55835 5.91992 6.4896 5.91992 7.63835C5.91992 8.7871 6.85117 9.71835 7.99992 9.71835Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                    <path
+                                                                        d="M2.41379 6.42506C3.72712 0.651724 12.2805 0.65839 13.5871 6.43172C14.3538 9.81839 12.2471 12.6851 10.4005 14.4584C9.06046 15.7517 6.94046 15.7517 5.59379 14.4584C3.75379 12.6851 1.64712 9.81172 2.41379 6.42506Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                </svg>
+                                                                مدارس المكتشف العالمية - العزيزية، جدة
+                                                            </span>
+                                                            <span
+                                                                class="text-[#6B7280] text-xs hidden lg:flex items-center gap-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.10671 7.24671C6.04004 7.24004 5.96004 7.24004 5.88671 7.24671C4.30004 7.19337 3.04004 5.89337 3.04004 4.29337C3.04004 2.66004 4.36004 1.33337 6.00004 1.33337C7.63337 1.33337 8.96004 2.66004 8.96004 4.29337C8.95337 5.89337 7.69337 7.19337 6.10671 7.24671Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M10.9402 2.66663C12.2335 2.66663 13.2735 3.71329 13.2735 4.99996C13.2735 6.25996 12.2735 7.28663 11.0268 7.33329C10.9735 7.32663 10.9135 7.32663 10.8535 7.33329"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M2.77348 9.70663C1.16014 10.7866 1.16014 12.5466 2.77348 13.62C4.60681 14.8466 7.61348 14.8466 9.44681 13.62C11.0601 12.54 11.0601 10.78 9.44681 9.70663C7.62014 8.48663 4.61348 8.48663 2.77348 9.70663Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M12.2266 13.3334C12.7066 13.2334 13.1599 13.04 13.5332 12.7534C14.5732 11.9734 14.5732 10.6867 13.5332 9.90671C13.1666 9.62671 12.7199 9.44004 12.2466 9.33337"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+
+                                                                142 متقدمًا
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </article>
+                                        <!-- card item  -->
+                                        <article
+                                            class="border-b border-b-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
+                                            <div class="flex items-start gap-4">
+                                                <div
+                                                    class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
+                                                    <img src="assets/images/Visitor/featuredjob-2.png"
+                                                        alt="featured job">
+                                                </div>
+                                                <div class="flex justify-center flex-col gap-5 flex-1">
+                                                    <div class=" flex gap-4 items-center">
+                                                        <div
+                                                            class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
+                                                            <img src="assets/images/Visitor/featuredjob-2.png"
+                                                                alt="featured job">
+                                                        </div>
+                                                        <div class="flex flex-col lg:flex-row gap-1 flex-1">
+                                                            <div class=" flex justify-between gap-5 items-center">
+                                                                <h2 class="font-bold text-16-21 text-[#333745 ]">
+                                                                    مدرس انشطة تفاعلية للمرحلة
+                                                                    الابتدائية
+                                                                </h2>
+                                                                <svg class="lg:hidden" width="24" height="24"
+                                                                    viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M9.25 9.05005C11.03 9.70005 12.97 9.70005 14.75 9.05005"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path
+                                                                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <span
+                                                                class="text-11-16 font-bold w-[61px] text-[#6B7280] py-0.5 px-1.5 bg-[#F0F6F6]  rounded-[5px]">
+                                                                دوام كامل
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col gap-3 flex-1">
+                                                            <div
+                                                                class="flex gap-1 items-center text-xs text-[#010513B2]">
+                                                                <span>من ذوي الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>5 سنوات من الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>تم النشر منذ 53 دقيقة</span>
+                                                            </div>
+                                                            <p class="text-[#010513E5] text-13-23 ">
+                                                                نعتنى بأدق التفاصيل وقت التسجيل مع
+                                                                المدربين لتكون الدورات المصورة ذات جودة عالية تشجعك على
+                                                                المشاهدة
+                                                            </p>
+
+                                                        </div>
+                                                        <div class="flex justify-between items-center">
+                                                            <span
+                                                                class="text-[#6B7280] text-xs flex items-center gap-2">
+                                                                <svg width="16" height="17" viewBox="0 0 16 17"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M7.99992 9.71835C9.14867 9.71835 10.0799 8.7871 10.0799 7.63835C10.0799 6.4896 9.14867 5.55835 7.99992 5.55835C6.85117 5.55835 5.91992 6.4896 5.91992 7.63835C5.91992 8.7871 6.85117 9.71835 7.99992 9.71835Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                    <path
+                                                                        d="M2.41379 6.42506C3.72712 0.651724 12.2805 0.65839 13.5871 6.43172C14.3538 9.81839 12.2471 12.6851 10.4005 14.4584C9.06046 15.7517 6.94046 15.7517 5.59379 14.4584C3.75379 12.6851 1.64712 9.81172 2.41379 6.42506Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                </svg>
+                                                                مدارس المكتشف العالمية - العزيزية، جدة
+                                                            </span>
+                                                            <span
+                                                                class="text-[#6B7280] text-xs hidden lg:flex items-center gap-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.10671 7.24671C6.04004 7.24004 5.96004 7.24004 5.88671 7.24671C4.30004 7.19337 3.04004 5.89337 3.04004 4.29337C3.04004 2.66004 4.36004 1.33337 6.00004 1.33337C7.63337 1.33337 8.96004 2.66004 8.96004 4.29337C8.95337 5.89337 7.69337 7.19337 6.10671 7.24671Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M10.9402 2.66663C12.2335 2.66663 13.2735 3.71329 13.2735 4.99996C13.2735 6.25996 12.2735 7.28663 11.0268 7.33329C10.9735 7.32663 10.9135 7.32663 10.8535 7.33329"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M2.77348 9.70663C1.16014 10.7866 1.16014 12.5466 2.77348 13.62C4.60681 14.8466 7.61348 14.8466 9.44681 13.62C11.0601 12.54 11.0601 10.78 9.44681 9.70663C7.62014 8.48663 4.61348 8.48663 2.77348 9.70663Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M12.2266 13.3334C12.7066 13.2334 13.1599 13.04 13.5332 12.7534C14.5732 11.9734 14.5732 10.6867 13.5332 9.90671C13.1666 9.62671 12.7199 9.44004 12.2466 9.33337"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+
+                                                                142 متقدمًا
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </article>
+                                        <!-- card item  -->
+                                        <article
+                                            class="border-b border-b-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
+                                            <div class="flex items-start gap-4">
+                                                <div
+                                                    class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
+                                                    <img src="assets/images/Visitor/featuredjob-2.png"
+                                                        alt="featured job">
+                                                </div>
+                                                <div class="flex justify-center flex-col gap-5 flex-1">
+                                                    <div class=" flex gap-4 items-center">
+                                                        <div
+                                                            class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
+                                                            <img src="assets/images/Visitor/featuredjob-2.png"
+                                                                alt="featured job">
+                                                        </div>
+                                                        <div class="flex flex-col lg:flex-row gap-1 flex-1">
+                                                            <div class=" flex justify-between gap-5 items-center">
+                                                                <h2 class="font-bold text-16-21 text-[#333745 ]">
+                                                                    مدرس انشطة تفاعلية للمرحلة
+                                                                    الابتدائية
+                                                                </h2>
+                                                                <svg class="lg:hidden" width="24" height="24"
+                                                                    viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M9.25 9.05005C11.03 9.70005 12.97 9.70005 14.75 9.05005"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path
+                                                                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <span
+                                                                class="text-11-16 font-bold w-[61px] text-[#6B7280] py-0.5 px-1.5 bg-[#F0F6F6]  rounded-[5px]">
+                                                                دوام كامل
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col gap-3 flex-1">
+                                                            <div
+                                                                class="flex gap-1 items-center text-xs text-[#010513B2]">
+                                                                <span>من ذوي الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>5 سنوات من الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>تم النشر منذ 53 دقيقة</span>
+                                                            </div>
+                                                            <p class="text-[#010513E5] text-13-23 ">
+                                                                نعتنى بأدق التفاصيل وقت التسجيل مع
+                                                                المدربين لتكون الدورات المصورة ذات جودة عالية تشجعك على
+                                                                المشاهدة
+                                                            </p>
+
+                                                        </div>
+                                                        <div class="flex justify-between items-center">
+                                                            <span
+                                                                class="text-[#6B7280] text-xs flex items-center gap-2">
+                                                                <svg width="16" height="17" viewBox="0 0 16 17"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M7.99992 9.71835C9.14867 9.71835 10.0799 8.7871 10.0799 7.63835C10.0799 6.4896 9.14867 5.55835 7.99992 5.55835C6.85117 5.55835 5.91992 6.4896 5.91992 7.63835C5.91992 8.7871 6.85117 9.71835 7.99992 9.71835Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                    <path
+                                                                        d="M2.41379 6.42506C3.72712 0.651724 12.2805 0.65839 13.5871 6.43172C14.3538 9.81839 12.2471 12.6851 10.4005 14.4584C9.06046 15.7517 6.94046 15.7517 5.59379 14.4584C3.75379 12.6851 1.64712 9.81172 2.41379 6.42506Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                </svg>
+                                                                مدارس المكتشف العالمية - العزيزية، جدة
+                                                            </span>
+                                                            <span
+                                                                class="text-[#6B7280] text-xs hidden lg:flex items-center gap-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.10671 7.24671C6.04004 7.24004 5.96004 7.24004 5.88671 7.24671C4.30004 7.19337 3.04004 5.89337 3.04004 4.29337C3.04004 2.66004 4.36004 1.33337 6.00004 1.33337C7.63337 1.33337 8.96004 2.66004 8.96004 4.29337C8.95337 5.89337 7.69337 7.19337 6.10671 7.24671Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M10.9402 2.66663C12.2335 2.66663 13.2735 3.71329 13.2735 4.99996C13.2735 6.25996 12.2735 7.28663 11.0268 7.33329C10.9735 7.32663 10.9135 7.32663 10.8535 7.33329"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M2.77348 9.70663C1.16014 10.7866 1.16014 12.5466 2.77348 13.62C4.60681 14.8466 7.61348 14.8466 9.44681 13.62C11.0601 12.54 11.0601 10.78 9.44681 9.70663C7.62014 8.48663 4.61348 8.48663 2.77348 9.70663Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M12.2266 13.3334C12.7066 13.2334 13.1599 13.04 13.5332 12.7534C14.5732 11.9734 14.5732 10.6867 13.5332 9.90671C13.1666 9.62671 12.7199 9.44004 12.2466 9.33337"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+
+                                                                142 متقدمًا
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </article>
+                                        <!-- card item  -->
+                                        <article
+                                            class="border-b border-b-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
+                                            <div class="flex items-start gap-4">
+                                                <div
+                                                    class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
+                                                    <img src="assets/images/Visitor/featuredjob-2.png"
+                                                        alt="featured job">
+                                                </div>
+                                                <div class="flex justify-center flex-col gap-5 flex-1">
+                                                    <div class=" flex gap-4 items-center">
+                                                        <div
+                                                            class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
+                                                            <img src="assets/images/Visitor/featuredjob-2.png"
+                                                                alt="featured job">
+                                                        </div>
+                                                        <div class="flex flex-col lg:flex-row gap-1 flex-1">
+                                                            <div class=" flex justify-between gap-5 items-center">
+                                                                <h2 class="font-bold text-16-21 text-[#333745 ]">
+                                                                    مدرس انشطة تفاعلية للمرحلة
+                                                                    الابتدائية
+                                                                </h2>
+                                                                <svg class="lg:hidden" width="24" height="24"
+                                                                    viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M9.25 9.05005C11.03 9.70005 12.97 9.70005 14.75 9.05005"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path
+                                                                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <span
+                                                                class="text-11-16 font-bold w-[61px] text-[#6B7280] py-0.5 px-1.5 bg-[#F0F6F6]  rounded-[5px]">
+                                                                دوام كامل
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col gap-3 flex-1">
+                                                            <div
+                                                                class="flex gap-1 items-center text-xs text-[#010513B2]">
+                                                                <span>من ذوي الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>5 سنوات من الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>تم النشر منذ 53 دقيقة</span>
+                                                            </div>
+                                                            <p class="text-[#010513E5] text-13-23 ">
+                                                                نعتنى بأدق التفاصيل وقت التسجيل مع
+                                                                المدربين لتكون الدورات المصورة ذات جودة عالية تشجعك على
+                                                                المشاهدة
+                                                            </p>
+
+                                                        </div>
+                                                        <div class="flex justify-between items-center">
+                                                            <span
+                                                                class="text-[#6B7280] text-xs flex items-center gap-2">
+                                                                <svg width="16" height="17" viewBox="0 0 16 17"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M7.99992 9.71835C9.14867 9.71835 10.0799 8.7871 10.0799 7.63835C10.0799 6.4896 9.14867 5.55835 7.99992 5.55835C6.85117 5.55835 5.91992 6.4896 5.91992 7.63835C5.91992 8.7871 6.85117 9.71835 7.99992 9.71835Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                    <path
+                                                                        d="M2.41379 6.42506C3.72712 0.651724 12.2805 0.65839 13.5871 6.43172C14.3538 9.81839 12.2471 12.6851 10.4005 14.4584C9.06046 15.7517 6.94046 15.7517 5.59379 14.4584C3.75379 12.6851 1.64712 9.81172 2.41379 6.42506Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                </svg>
+                                                                مدارس المكتشف العالمية - العزيزية، جدة
+                                                            </span>
+                                                            <span
+                                                                class="text-[#6B7280] text-xs hidden lg:flex items-center gap-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.10671 7.24671C6.04004 7.24004 5.96004 7.24004 5.88671 7.24671C4.30004 7.19337 3.04004 5.89337 3.04004 4.29337C3.04004 2.66004 4.36004 1.33337 6.00004 1.33337C7.63337 1.33337 8.96004 2.66004 8.96004 4.29337C8.95337 5.89337 7.69337 7.19337 6.10671 7.24671Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M10.9402 2.66663C12.2335 2.66663 13.2735 3.71329 13.2735 4.99996C13.2735 6.25996 12.2735 7.28663 11.0268 7.33329C10.9735 7.32663 10.9135 7.32663 10.8535 7.33329"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M2.77348 9.70663C1.16014 10.7866 1.16014 12.5466 2.77348 13.62C4.60681 14.8466 7.61348 14.8466 9.44681 13.62C11.0601 12.54 11.0601 10.78 9.44681 9.70663C7.62014 8.48663 4.61348 8.48663 2.77348 9.70663Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M12.2266 13.3334C12.7066 13.2334 13.1599 13.04 13.5332 12.7534C14.5732 11.9734 14.5732 10.6867 13.5332 9.90671C13.1666 9.62671 12.7199 9.44004 12.2466 9.33337"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+
+                                                                142 متقدمًا
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </article>
+                                        <!-- card item  -->
+                                        <article
+                                            class="border-b border-b-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
+                                            <div class="flex items-start gap-4">
+                                                <div
+                                                    class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
+                                                    <img src="assets/images/Visitor/featuredjob-2.png"
+                                                        alt="featured job">
+                                                </div>
+                                                <div class="flex justify-center flex-col gap-5 flex-1">
+                                                    <div class=" flex gap-4 items-center">
+                                                        <div
+                                                            class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
+                                                            <img src="assets/images/Visitor/featuredjob-2.png"
+                                                                alt="featured job">
+                                                        </div>
+                                                        <div class="flex flex-col lg:flex-row gap-1 flex-1">
+                                                            <div class=" flex justify-between gap-5 items-center">
+                                                                <h2 class="font-bold text-16-21 text-[#333745 ]">
+                                                                    مدرس انشطة تفاعلية للمرحلة
+                                                                    الابتدائية
+                                                                </h2>
+                                                                <svg class="lg:hidden" width="24" height="24"
+                                                                    viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M9.25 9.05005C11.03 9.70005 12.97 9.70005 14.75 9.05005"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path
+                                                                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <span
+                                                                class="text-11-16 font-bold w-[61px] text-[#6B7280] py-0.5 px-1.5 bg-[#F0F6F6]  rounded-[5px]">
+                                                                دوام كامل
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col gap-3 flex-1">
+                                                            <div
+                                                                class="flex gap-1 items-center text-xs text-[#010513B2]">
+                                                                <span>من ذوي الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>5 سنوات من الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>تم النشر منذ 53 دقيقة</span>
+                                                            </div>
+                                                            <p class="text-[#010513E5] text-13-23 ">
+                                                                نعتنى بأدق التفاصيل وقت التسجيل مع
+                                                                المدربين لتكون الدورات المصورة ذات جودة عالية تشجعك على
+                                                                المشاهدة
+                                                            </p>
+
+                                                        </div>
+                                                        <div class="flex justify-between items-center">
+                                                            <span
+                                                                class="text-[#6B7280] text-xs flex items-center gap-2">
+                                                                <svg width="16" height="17" viewBox="0 0 16 17"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M7.99992 9.71835C9.14867 9.71835 10.0799 8.7871 10.0799 7.63835C10.0799 6.4896 9.14867 5.55835 7.99992 5.55835C6.85117 5.55835 5.91992 6.4896 5.91992 7.63835C5.91992 8.7871 6.85117 9.71835 7.99992 9.71835Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                    <path
+                                                                        d="M2.41379 6.42506C3.72712 0.651724 12.2805 0.65839 13.5871 6.43172C14.3538 9.81839 12.2471 12.6851 10.4005 14.4584C9.06046 15.7517 6.94046 15.7517 5.59379 14.4584C3.75379 12.6851 1.64712 9.81172 2.41379 6.42506Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                </svg>
+                                                                مدارس المكتشف العالمية - العزيزية، جدة
+                                                            </span>
+                                                            <span
+                                                                class="text-[#6B7280] text-xs hidden lg:flex items-center gap-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.10671 7.24671C6.04004 7.24004 5.96004 7.24004 5.88671 7.24671C4.30004 7.19337 3.04004 5.89337 3.04004 4.29337C3.04004 2.66004 4.36004 1.33337 6.00004 1.33337C7.63337 1.33337 8.96004 2.66004 8.96004 4.29337C8.95337 5.89337 7.69337 7.19337 6.10671 7.24671Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M10.9402 2.66663C12.2335 2.66663 13.2735 3.71329 13.2735 4.99996C13.2735 6.25996 12.2735 7.28663 11.0268 7.33329C10.9735 7.32663 10.9135 7.32663 10.8535 7.33329"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M2.77348 9.70663C1.16014 10.7866 1.16014 12.5466 2.77348 13.62C4.60681 14.8466 7.61348 14.8466 9.44681 13.62C11.0601 12.54 11.0601 10.78 9.44681 9.70663C7.62014 8.48663 4.61348 8.48663 2.77348 9.70663Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M12.2266 13.3334C12.7066 13.2334 13.1599 13.04 13.5332 12.7534C14.5732 11.9734 14.5732 10.6867 13.5332 9.90671C13.1666 9.62671 12.7199 9.44004 12.2466 9.33337"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+
+                                                                142 متقدمًا
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </article>
+                                        <!-- card item  -->
+                                        <article
+                                            class="border-b border-b-[#D9DADC]  bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
+                                            <div class="flex items-start gap-4">
+                                                <div
+                                                    class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
+                                                    <img src="assets/images/Visitor/featuredjob-2.png"
+                                                        alt="featured job">
+                                                </div>
+                                                <div class="flex justify-center flex-col gap-5 flex-1">
+                                                    <div class=" flex gap-4 items-center">
+                                                        <div
+                                                            class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
+                                                            <img src="assets/images/Visitor/featuredjob-2.png"
+                                                                alt="featured job">
+                                                        </div>
+                                                        <div class="flex flex-col lg:flex-row gap-1 flex-1">
+                                                            <div class=" flex justify-between gap-5 items-center">
+                                                                <h2 class="font-bold text-16-21 text-[#333745 ]">
+                                                                    مدرس انشطة تفاعلية للمرحلة
+                                                                    الابتدائية
+                                                                </h2>
+                                                                <svg class="lg:hidden" width="24" height="24"
+                                                                    viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M9.25 9.05005C11.03 9.70005 12.97 9.70005 14.75 9.05005"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path
+                                                                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <span
+                                                                class="text-11-16 font-bold w-[61px] text-[#6B7280] py-0.5 px-1.5 bg-[#F0F6F6]  rounded-[5px]">
+                                                                دوام كامل
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col gap-3 flex-1">
+                                                            <div
+                                                                class="flex gap-1 items-center text-xs text-[#010513B2]">
+                                                                <span>من ذوي الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>5 سنوات من الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>تم النشر منذ 53 دقيقة</span>
+                                                            </div>
+                                                            <p class="text-[#010513E5] text-13-23 ">
+                                                                نعتنى بأدق التفاصيل وقت التسجيل مع
+                                                                المدربين لتكون الدورات المصورة ذات جودة عالية تشجعك على
+                                                                المشاهدة
+                                                            </p>
+
+                                                        </div>
+                                                        <div class="flex justify-between items-center">
+                                                            <span
+                                                                class="text-[#6B7280] text-xs flex items-center gap-2">
+                                                                <svg width="16" height="17" viewBox="0 0 16 17"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M7.99992 9.71835C9.14867 9.71835 10.0799 8.7871 10.0799 7.63835C10.0799 6.4896 9.14867 5.55835 7.99992 5.55835C6.85117 5.55835 5.91992 6.4896 5.91992 7.63835C5.91992 8.7871 6.85117 9.71835 7.99992 9.71835Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                    <path
+                                                                        d="M2.41379 6.42506C3.72712 0.651724 12.2805 0.65839 13.5871 6.43172C14.3538 9.81839 12.2471 12.6851 10.4005 14.4584C9.06046 15.7517 6.94046 15.7517 5.59379 14.4584C3.75379 12.6851 1.64712 9.81172 2.41379 6.42506Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                </svg>
+                                                                مدارس المكتشف العالمية - العزيزية، جدة
+                                                            </span>
+                                                            <span
+                                                                class="text-[#6B7280] text-xs hidden lg:flex items-center gap-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.10671 7.24671C6.04004 7.24004 5.96004 7.24004 5.88671 7.24671C4.30004 7.19337 3.04004 5.89337 3.04004 4.29337C3.04004 2.66004 4.36004 1.33337 6.00004 1.33337C7.63337 1.33337 8.96004 2.66004 8.96004 4.29337C8.95337 5.89337 7.69337 7.19337 6.10671 7.24671Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M10.9402 2.66663C12.2335 2.66663 13.2735 3.71329 13.2735 4.99996C13.2735 6.25996 12.2735 7.28663 11.0268 7.33329C10.9735 7.32663 10.9135 7.32663 10.8535 7.33329"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M2.77348 9.70663C1.16014 10.7866 1.16014 12.5466 2.77348 13.62C4.60681 14.8466 7.61348 14.8466 9.44681 13.62C11.0601 12.54 11.0601 10.78 9.44681 9.70663C7.62014 8.48663 4.61348 8.48663 2.77348 9.70663Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M12.2266 13.3334C12.7066 13.2334 13.1599 13.04 13.5332 12.7534C14.5732 11.9734 14.5732 10.6867 13.5332 9.90671C13.1666 9.62671 12.7199 9.44004 12.2466 9.33337"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+
+                                                                142 متقدمًا
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </article>
+                                        <!-- card item  -->
+                                        <article class="bg-white shadow-featuredJob py-[25px] px-5 flex flex-col ">
+                                            <div class="flex items-start gap-4">
+                                                <div
+                                                    class="overflow-hidden rounded-full hidden lg:flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]  ">
+                                                    <img src="assets/images/Visitor/featuredjob-2.png"
+                                                        alt="featured job">
+                                                </div>
+                                                <div class="flex justify-center flex-col gap-5 flex-1">
+                                                    <div class=" flex gap-4 items-center">
+                                                        <div
+                                                            class="overflow-hidden lg:hidden rounded-full flex items-center justify-center w-16 h-16 lg:h-20 lg:w-20 bg-[#F0F6F6]">
+                                                            <img src="assets/images/Visitor/featuredjob-2.png"
+                                                                alt="featured job">
+                                                        </div>
+                                                        <div class="flex flex-col lg:flex-row gap-1 flex-1">
+                                                            <div class=" flex justify-between gap-5 items-center">
+                                                                <h2 class="font-bold text-16-21 text-[#333745 ]">
+                                                                    مدرس انشطة تفاعلية للمرحلة
+                                                                    الابتدائية
+                                                                </h2>
+                                                                <svg class="lg:hidden" width="24" height="24"
+                                                                    viewBox="0 0 24 24" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M9.25 9.05005C11.03 9.70005 12.97 9.70005 14.75 9.05005"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path
+                                                                        d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+                                                                        stroke="#010513" stroke-opacity="0.9"
+                                                                        stroke-width="1.5" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <span
+                                                                class="text-11-16 font-bold w-[61px] text-[#6B7280] py-0.5 px-1.5 bg-[#F0F6F6]  rounded-[5px]">
+                                                                دوام كامل
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col gap-3 flex-1">
+                                                            <div
+                                                                class="flex gap-1 items-center text-xs text-[#010513B2]">
+                                                                <span>من ذوي الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>5 سنوات من الخبرة</span>
+                                                                <span>-</span>
+                                                                <span>تم النشر منذ 53 دقيقة</span>
+                                                            </div>
+                                                            <p class="text-[#010513E5] text-13-23 ">
+                                                                نعتنى بأدق التفاصيل وقت التسجيل مع
+                                                                المدربين لتكون الدورات المصورة ذات جودة عالية تشجعك على
+                                                                المشاهدة
+                                                            </p>
+
+                                                        </div>
+                                                        <div class="flex justify-between items-center">
+                                                            <span
+                                                                class="text-[#6B7280] text-xs flex items-center gap-2">
+                                                                <svg width="16" height="17" viewBox="0 0 16 17"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M7.99992 9.71835C9.14867 9.71835 10.0799 8.7871 10.0799 7.63835C10.0799 6.4896 9.14867 5.55835 7.99992 5.55835C6.85117 5.55835 5.91992 6.4896 5.91992 7.63835C5.91992 8.7871 6.85117 9.71835 7.99992 9.71835Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                    <path
+                                                                        d="M2.41379 6.42506C3.72712 0.651724 12.2805 0.65839 13.5871 6.43172C14.3538 9.81839 12.2471 12.6851 10.4005 14.4584C9.06046 15.7517 6.94046 15.7517 5.59379 14.4584C3.75379 12.6851 1.64712 9.81172 2.41379 6.42506Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"></path>
+                                                                </svg>
+                                                                مدارس المكتشف العالمية - العزيزية، جدة
+                                                            </span>
+                                                            <span
+                                                                class="text-[#6B7280] text-xs hidden lg:flex items-center gap-2">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M6.10671 7.24671C6.04004 7.24004 5.96004 7.24004 5.88671 7.24671C4.30004 7.19337 3.04004 5.89337 3.04004 4.29337C3.04004 2.66004 4.36004 1.33337 6.00004 1.33337C7.63337 1.33337 8.96004 2.66004 8.96004 4.29337C8.95337 5.89337 7.69337 7.19337 6.10671 7.24671Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M10.9402 2.66663C12.2335 2.66663 13.2735 3.71329 13.2735 4.99996C13.2735 6.25996 12.2735 7.28663 11.0268 7.33329C10.9735 7.32663 10.9135 7.32663 10.8535 7.33329"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M2.77348 9.70663C1.16014 10.7866 1.16014 12.5466 2.77348 13.62C4.60681 14.8466 7.61348 14.8466 9.44681 13.62C11.0601 12.54 11.0601 10.78 9.44681 9.70663C7.62014 8.48663 4.61348 8.48663 2.77348 9.70663Z"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M12.2266 13.3334C12.7066 13.2334 13.1599 13.04 13.5332 12.7534C14.5732 11.9734 14.5732 10.6867 13.5332 9.90671C13.1666 9.62671 12.7199 9.44004 12.2466 9.33337"
+                                                                        stroke="#010513" stroke-opacity="0.55"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+
+                                                                142 متقدمًا
+                                                            </span>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </article>
+
+
+                                    </section>
+                                    <div class="flex justify-center items-center gap-2 my-4 lg:my-0">
+                                        <a href="#"
+                                            class="w-10 h-10 rounded-full bg-[#5FC1B4] text-2xl  text-white flex justify-center items-center">|</a>
+                                        <a href="#"
+                                            class="w-8 h-8 border border-[#D9DADC] text-[#6B7280] text-18-21 bg-white rounded-full flex justify-center items-center">2</a>
+                                        <a href="#"
+                                            class="w-8 h-8 border border-[#D9DADC] text-[#6B7280] text-18-21 bg-white rounded-full flex justify-center items-center">3</a>
+                                        <a href="#"
+                                            class="w-8 h-8 border border-[#D9DADC] text-[#6B7280] text-18-21 bg-white rounded-full flex justify-center items-center">4</a>
+                                        <a href="#"
+                                            class="w-8 h-8 border border-[#D9DADC] text-[#6B7280] text-18-21 bg-white rounded-full flex justify-center items-center">5</a>
+                                        <a href="#"
+                                            class="w-8 h-8  text-[#6B7280] text-18-21   flex justify-center items-center">...</a>
+                                        <a href="#"
+                                            class="w-8 h-8 border border-[#D9DADC] text-[#6B7280] text-18-21 bg-white rounded-full flex justify-center items-center">22</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
     </main>

@@ -1,4 +1,4 @@
-
+// start testimonial carousel 
 
 let $carousel = $(".testimonials ").flickity({
     autoPlay: true,
@@ -32,6 +32,8 @@ $carousel.on('change.flickity', () => {
     $(".testimonials .carousel-cell:not(.is-selected)").css({ "border": "1px solid #D1D5DB", "box-shadow": "none" });
 });
 
+// end testimonial carousel 
+// ==================================================
 
 let $carousel2 = $(".explore-jobs").flickity({
     autoPlay: true,
@@ -42,6 +44,8 @@ let $carousel2 = $(".explore-jobs").flickity({
     fullscreen: true,
     pageDots: true, groupCells: true,
 });
+
+
 let $carousel3 = $(".explore-jobs-2").flickity({
     autoPlay: true,
     wrapAround: true,
@@ -51,12 +55,14 @@ let $carousel3 = $(".explore-jobs-2").flickity({
     fullscreen: true,
     pageDots: true, groupCells: true,
 });
+
+
 let $carousel4 = $(".dashboared").flickity({
     autoPlay: true,
     wrapAround: true,
     prevNextButtons: false,
     imagesLoaded: true,
-    setGallerySize: true, 
+    setGallerySize: true,
     cellAlign: 'right',
     fullscreen: true,
     pageDots: true, groupCells: true,
@@ -72,6 +78,7 @@ if ($(".filt-item")) {
 
     })
 }
+
 if ($(".open-filters")) {
     let filterBtn = $(".open-filters"),
         closeFilters = $(".close-filters"),
@@ -85,7 +92,8 @@ if ($(".open-filters")) {
 
     })
 }
-
+// =============================================
+// notification clse 
 if ($(".closebtn")) {
     $(".closebtn").click(function () {
         $(this).parent().css("display", "none")
