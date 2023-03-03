@@ -54,6 +54,7 @@ module.exports = {
       boxShadow: {
         'headerShadow': ' 0px 2px 8px rgba(0, 0, 0, 0.08)',
         'featuredJob': ' 0px 1px 1px rgba(0, 0, 0, 0.16)',
+        'nextprev': ' 0px 0px 16px rgba(0, 0, 0, 0.16)',
         'join': ' 0px 2px 4px rgba(0, 0, 0, 0.05)',
       },
     },
