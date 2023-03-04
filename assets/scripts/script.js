@@ -69,16 +69,7 @@ let $carousel4 = $(".dashboared").flickity({
 });
 
 
-// filters 
-
-if ($(".filt-item")) {
-    $(".filt-item .check-btn").click(function () {
-        let th = $(this);
-        th.find(" svg").toggleClass("hidden");
-
-    })
-}
-
+// filrer mobile aside 
 if ($(".open-filters")) {
     let filterBtn = $(".open-filters"),
         closeFilters = $(".close-filters"),
@@ -98,4 +89,15 @@ if ($(".closebtn")) {
     $(".closebtn").click(function () {
         $(this).parent().css("display", "none")
     })
+}
+
+// =================================================
+
+
+
+if (document.getElementById("personal-img")) {
+    var loadFile = function (event) {
+        var image = document.getElementById("personal-img");
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
 }

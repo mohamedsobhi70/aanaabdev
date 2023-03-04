@@ -2,13 +2,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-input:checked + div {
-  @apply bg-primary shadow-none border-none accent-white;
-}
-input:checked + div svg {
-  @apply block;
-}
- input:indeterminate~.checkmark {
-  background: #25a5bd;
-}
