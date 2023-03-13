@@ -2,3 +2,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #8447FF;
+    border-radius:20px;
+
+  }
+ 
+  .aanaab-jobs-menu.active {
+    @apply top-[66px] opacity-100 visible;
+  }
+  .aannab-mobile-menu.active {
+    @apply top-[80px] sm:top-[58px] opacity-100 visible;
+  }
+  .drop-down-icon.open {
+    @apply rotate-180;
+  }
+  .dashboared {
+    @apply ml-[-30px] md:ml-0 mr-0;
+  }
+}

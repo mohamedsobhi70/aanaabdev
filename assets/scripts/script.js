@@ -1,3 +1,28 @@
+// header 
+if ($(".jobs-btn")) {
+    $(".aanaab-jobs-menu").on("mouseenter", function () {
+        $(".aanaab-jobs-menu").addClass("active");
+    }).on("mouseleave", function () {
+        $(".aanaab-jobs-menu").removeClass("active");
+    })
+    $(".jobs-btn").on("mouseenter", function () {
+        $(".aanaab-jobs-menu").addClass("active");
+    }).on("mouseleave", function () {
+        $(".aanaab-jobs-menu").removeClass("active");
+
+    })
+
+}
+if ($(".mobile-menu-btn")) {
+    $(".mobile-menu-btn").on("click", function () {
+        $(".aannab-mobile-menu").toggleClass("active");
+    })
+    $(".close-mobile-menu").on("click", function () {
+        $(".aannab-mobile-menu").removeClass("active");
+    })
+}
+
+
 // start testimonial carousel 
 
 let $carousel = $(".testimonials ").flickity({
@@ -74,9 +99,9 @@ if ($(".open-filters")) {
     let filterBtn = $(".open-filters"),
         closeFilters = $(".close-filters"),
         filtersection = $(".filters-section-container");
-    filtersection.css({ "top": "100%" })
+    filtersection.css({ "bottom": "-100%" })
     filterBtn.click(function () {
-        filtersection.removeClass("top-full").removeClass("translate-y-full").css({ "top": "0" })
+        filtersection.removeClass("top-full").removeClass("translate-y-full").css({ "bottom": "0" })
     });
     closeFilters.click(function () {
         filtersection.addClass("translate-y-full")
@@ -100,4 +125,15 @@ if (document.getElementById("personal-img")) {
         var image = document.getElementById("personal-img");
         image.src = URL.createObjectURL(event.target.files[0]);
     };
+}
+
+
+// dropdown lists 
+if ($(".drop-down")) {
+    $(".drop-down").on("click", function () {
+        $(this).parent().find(".drop-down-items").slideToggle(300);
+        if ($(this).parent().find(".drop-down-icon")) {
+            $(this).parent().find(".drop-down-icon").toggleClass("open");
+        }
+    })
 }
